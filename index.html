@@ -23,11 +23,61 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main></main>
+        <main>
+            <div class="container">
+                <!--instructions-->
+                <div class="text-center mb-4">
+                    <h1>Fantasy Name Generator</h1>
+                    <p>Fill out the form below to generate your fantasy name</p>
+                </div>
+                <!--form section-->
+                <form id="fantasyForm" class="mb-4">
+                    <!--get first name-->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name.">
+                    </div>
+                     <!--get last name--> 
+                     <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name.">
+                    </div>
+                     <!--get favorite color-->
+                     <div class="mb-3">
+                        <label for="favoriteColor" class="form-label">Favorite Color</label>
+                        <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color.">
+                    </div>
+                     <!--get favorite animal name-->
+                     <div class="mb-3">
+                        <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
+                        <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal.">
+                    </div>
+                    <!--get road type dropdown selector-->
+                    <div class="mb-3">
+                        <label for="roadType" class="form-label">Favorite Animal</label>
+                        <select id="roadType" class="form-select">
+                            <option selected>Select Road Type</option>
+                            <option value="road">Road</option>
+                            <option value="circle">Circle</option>
+                            <option value="street">Street</option>
+                            <option value="Avenue">Avenue</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <!--submit button-->
+                    <button type="submit" class="btn btn-primary w-100"> Generate Name</button>
+                </form>
+                <!--Generated name output-->
+                <div class="resulted" id="result"></div>
+            </div>
+
+        </main>
+
         <footer>
             <!-- place footer here -->
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
