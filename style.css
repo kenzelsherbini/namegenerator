@@ -24,3 +24,11 @@
     background-image: linear-gradient(to bottom, #2980b9, #cfbde3);
     text-decoration: none;
   }
+
+  h1 {
+    color:rgb(236, 107, 191);
+  }
+
+  p{
+    color:#2980b9
+  }
